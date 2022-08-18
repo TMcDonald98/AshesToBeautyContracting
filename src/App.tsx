@@ -1,24 +1,19 @@
+import { Typography } from '@mui/material';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import dove from './Images/dove-24588.svg';
+import roof from './Images/roofbackground.jpg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{height:70, width:'100vw', background:'#202225', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 24px', boxSizing: 'border-box'}}>
+        <div style={{display: 'flex', alignItems:'center'}}>
+          <img src={dove} alt={'dove'} style={{height: 50, marginRight: 16}} />
+          <Typography color={'white'} variant={'h5'}>ASHES TO BEAUTY</Typography>
+        </div>
+      </div>
+      <img src={roof} alt={'roofIMg'} style={{width: '100vw'}} />
     </div>
   );
 }
